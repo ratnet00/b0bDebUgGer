@@ -11,7 +11,7 @@ def initial():
 @app.route('/predict',methods=['POST','GET'])
 def predict():
     int_features=[int(x) for x in request.form.values()]
-    final=[np.array(int_features)]
+    final=[np.array(int_features).reshape(1,10)]
     prediction=model.predict(final)
     if prediction==1:
         return render_template('index.html',pred='You have a high chance of contracting cardiovascular disease. You should start exercising')

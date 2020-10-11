@@ -18,6 +18,6 @@ y_train = y_train.T
 x_test = x_test.T
 y_test = y_test.T
 rf = RandomForestClassifier(n_estimators = 1000, random_state = 1)
-rf.fit(x_train.T, y_train.T)
+rf=rf.fit(x_train.T, y_train.T)
 pickle.dump(rf,open('model.pkl','wb'))
 model=pickle.load(open('model.pkl','rb'))
