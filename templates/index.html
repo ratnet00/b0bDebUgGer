@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BobDebugger</title>
+  <link href="https://fonts.googleapis.com/css?family=Croissant+One" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800,900" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="..\static\css\bootstrap.css">
+  <link rel="stylesheet" href="..\static\css\font-awesome.min.css">
+  <link rel="stylesheet" href="..\static\css\owl.carousel.min.css">
+  <link rel="stylesheet" href="..\static\css\owl.theme.default.min.css">
+  <link rel="stylesheet" href="..\static\css\style.css">
+  <link rel="stylesheet" href="..\static\css\responsive.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <header class="header">
+      <div class="blue">
+        <img src="..\static\img\header-shepe-blue.png" alt="">
+      </div>
+      <div class="white">
+        <img src="..\static\img\header-shepe-white.png" alt="">
+      </div>
+      <div class="container">
+        <img class="shepe1" src="../static/img/shepe1.png" alt="">
+        <img class="shepe2" src="../static/img/shepe2.png" alt="">
+        <img class="shepe3" src="../static/img/shepe2.png" alt="">
+        <img class="shepe4" src="../static/img/shepe2.png" alt="">
+        <img class="shepe5" src="../static/img/shepe1.png" alt="">
+        <img class="shepe6" src="../static/img/shepe2.png" alt="">
+        <div class="row">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+
+            <h2>VITHACK 2020</a></h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12">
+            <div class="header-text">
+              <h1>Healthcare and Crisis Response</h1>
+              <p>Creation of an AI model that can recognize possible deeper issues <br> from
+simple vital signs/time-series of vital signs.</p>
+
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <div class="another-text">
+              <h3>Precictor Tool</h3>
+              <p>We have a data which classified if patients have heart disease or not according to features in it.
+                <br>
+                 We will try to use this data to create a model which tries predict if a patient has this disease or not.  </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="blue">
+        <img src="../static/img/contact-shepe-blue.png" alt="">
+      </div>
+      <div class="white">
+        <img src="../static/img/contact-shepe-white.png" alt="">
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-sm-12">
+            <div class="contact-text">
+              <h2>Enter Details</h2>
+              <p>age - age in years
+                <br>
+                sex - (1 = male; 0 = female)
+                <br>
+                cp - chest pain type
+              <br>
+                trestbps - resting blood pressure (in mm Hg on admission to the hospital)
+                <br>
+                chol - serum cholestoral in mg/dl
+                <br>
+                fbs - (fasting blood sugar > 120 mg/dl) (1 = true; 0 = false)
+                <br>
+                restecg - resting electrocardiographic results
+                <br>
+                thalach - maximum heart rate achieved
+                <br>
+                exang - exercise induced angina (1 = yes; 0 = no)
+                <br>
+                oldpeak - ST depression induced by exercise relative to rest
+            </div>
+          </div>
+          <div class="col-md-8 col-sm-12">
+            <div class="contact-form">
+              <form action="/predict" method="POST">
+                <div class="first">
+                  <input type="text" name="" placeholder="Age">
+                </div>
+                <div class="last">
+                  <input type="text" name="" placeholder="Sex">
+                </div>
+                <div class="first">
+                  <input type="text" name="" placeholder="Chest pain Type">
+                </div>
+                <div class="last">
+                  <input type="text" name="" placeholder="Resting Blood Pressure">
+                </div>
+                <div class="first">
+                  <input type="text" name="" placeholder="Serum Cholestrol">
+                </div>
+                <div class="last">
+                  <input type="text" name="" placeholder="Fasting Blood Sugar">
+                </div>
+                <div class="first">
+                  <input type="text" name="" placeholder="Cardiographic Result">
+                </div>
+                <div class="last">
+                  <input type="text" name="" placeholder="Maximum Heart Rate">
+                </div>
+                <div class="first">
+                  <input type="text" name="" placeholder="Exercise induced angina">
+                </div>
+                <div class="last">
+                  <input type="text" name="" placeholder="ST Depression">
+                </div>
+                <div class="first">
+                <div class="checkbox-submit">
+
+                  <div class="submit">
+                    <input type="submit" value="SUBMIT">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section class="works">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            
+          </div>
+          <div class="col-md-5">
+            <div class="work-text-full">
+              <div class="work-text">
+                <h2>Result</h></h2>
+                <p>
+                  <br>
+                  {{pred}}
+                <br>
+              </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  <p>  </p>
+  <p>   </p>
+
+
+        <section class="our-team">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                <div class="team-text">
+                  <h2>Our Team!</h2>
+
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-md-12">
+                <div class="my-claint owl-carousel owl-theme">
+                  <div class="item">
+                    <img src="../static/img\SmartSelect_20201010-000852_Photos.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Chaitanya Gupta</h>
+                      </h3>
+
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static/img/Tyagi.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Ritvik Tyagi</h3>
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static\img\dj bobs.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Devansh Jain</h3>
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static\img\SmartSelect_20201010-000852_Photos.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Chaitanya Gupta</h3>
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static\img\Tyagi.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Ritvik Tyagi</h3>
+
+                    </div>
+                  </div>
+                  <div class="item">
+                    <img src="../static\img\dj bobs.jpg" alt="">
+                    <div class="item-overlay"></div>
+                    <div class="item-text">
+                      <h3>Devansh Jain</h3>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <script src="../static\js\jquery-3.1.1.min.js"></script>
+        <script src="../static\js\bootstrap.min.js"></script>
+        <script src="../static\js\active.js"></script>
+        <script src="../static\js\owl.carousel.min.js"></script>
+</body>
+
+</html>
